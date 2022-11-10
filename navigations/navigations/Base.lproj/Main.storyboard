@@ -127,12 +127,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpt-0H-jhM">
-                                <rect key="frame" x="165" y="404.66666666666669" width="60" height="35"/>
+                                <rect key="frame" x="144.66666666666666" y="404.66666666666669" width="100.66666666666666" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Root">
+                                <buttonConfiguration key="configuration" style="filled" title="Go to root">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemMintColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToRoot:" destination="SHh-i2-XQF" eventType="touchUpInside" id="FXi-kt-Y6k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h53-wb-APm"/>
