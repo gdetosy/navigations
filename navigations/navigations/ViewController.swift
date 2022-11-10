@@ -8,12 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+ 
+    @IBAction func toYellowView(_ sender: UIButton) {
+        
+        let nextViewController = storyboardInstance.instantiateViewController(withIdentifier: "yellowViewController")
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+    }
 
+    let storyboardInstance = UIStoryboard(name: "Main", bundle: nil)
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+       
+        
     }
-
-
+    
 }
-
