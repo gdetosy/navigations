@@ -9,6 +9,19 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBAction func sendNewTextBack(_ sender: UIButton) {
+        
+        
+        self.navigationController?.viewControllers.forEach { viewController in
+            (viewController as? ViewController)?.updatedData = dataTextField.text ?? ""
+            
+            
+            
+        }
+        
+        
+        
+    }
     @IBOutlet weak var dataTextField: UITextField!
     var updatingData: String = ""
     override func viewWillAppear(_ animated: Bool) { super.viewWillAppear(animated)
