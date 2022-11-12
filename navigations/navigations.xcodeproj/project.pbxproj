@@ -13,6 +13,7 @@
 		96A51C72291D784600137E3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A51C70291D784600137E3E /* Main.storyboard */; };
 		96A51C74291D784800137E3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A51C73291D784800137E3E /* Assets.xcassets */; };
 		96A51C77291D784800137E3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A51C75291D784800137E3E /* LaunchScreen.storyboard */; };
+		96A54DB729200821002D0D2E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A54DB629200821002D0D2E /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		96A51C73291D784800137E3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A51C76291D784800137E3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96A51C78291D784800137E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A54DB629200821002D0D2E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		96A51C5E291D784600137E3E = {
 			isa = PBXGroup;
 			children = (
+				96A54DB629200821002D0D2E /* SecondViewController.swift */,
 				96A51C69291D784600137E3E /* navigations */,
 				96A51C68291D784600137E3E /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A54DB729200821002D0D2E /* SecondViewController.swift in Sources */,
 				96A51C6F291D784600137E3E /* ViewController.swift in Sources */,
 				96A51C6B291D784600137E3E /* AppDelegate.swift in Sources */,
 				96A51C6D291D784600137E3E /* SceneDelegate.swift in Sources */,
