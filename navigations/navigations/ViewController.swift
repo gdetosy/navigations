@@ -12,6 +12,14 @@ class ViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
 
+    @IBAction func goBackYellowScene(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
+
+    @IBAction func goBackToBlue(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+
     @IBAction func toYellowView(_ sender: UIButton) {
         let nextViewController = storyboardInstance.instantiateViewController(withIdentifier: "yellowViewController")
         self.navigationController?.pushViewController(nextViewController, animated: true)
