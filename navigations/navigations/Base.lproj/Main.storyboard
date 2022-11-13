@@ -27,7 +27,7 @@
         <!--Blue-->
         <scene sceneID="bBg-i9-cjS">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="WKQ-Nm-hIY" customClass="ViewController" customModule="navigations" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="WKQ-Nm-hIY" customClass="ViewController" customModule="navigations" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zzc-ge-J68" customClass="view">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,40 +48,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-8F-ZSa">
-                                <rect key="frame" x="30" y="528" width="330" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0F-NS-PIZ">
-                                <rect key="frame" x="100" y="578" width="190" height="32"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="send text to new scene">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" systemColor="secondaryLabelColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="editDataWithProperty:" destination="WKQ-Nm-hIY" eventType="touchUpInside" id="olb-rB-EQJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MNa-eH-45p"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
-                            <constraint firstItem="MNa-eH-45p" firstAttribute="trailing" secondItem="hUa-8F-ZSa" secondAttribute="trailing" constant="30" id="HXJ-vj-Wyl"/>
-                            <constraint firstItem="hUa-8F-ZSa" firstAttribute="leading" secondItem="MNa-eH-45p" secondAttribute="leading" constant="30" id="KDU-E6-MvX"/>
-                            <constraint firstItem="MNa-eH-45p" firstAttribute="bottom" secondItem="hUa-8F-ZSa" secondAttribute="bottom" constant="248" id="Lga-jI-rfh"/>
                             <constraint firstItem="Xea-zh-hhh" firstAttribute="centerX" secondItem="zzc-ge-J68" secondAttribute="centerX" id="NIN-5T-00M"/>
                             <constraint firstItem="Xea-zh-hhh" firstAttribute="top" secondItem="MNa-eH-45p" secondAttribute="top" constant="228" id="Uk9-bC-Esw"/>
-                            <constraint firstItem="MNa-eH-45p" firstAttribute="trailing" secondItem="T0F-NS-PIZ" secondAttribute="trailing" constant="100" id="WWG-LQ-tK6"/>
-                            <constraint firstItem="T0F-NS-PIZ" firstAttribute="leading" secondItem="MNa-eH-45p" secondAttribute="leading" constant="100" id="a2J-WR-Jzu"/>
                             <constraint firstItem="MNa-eH-45p" firstAttribute="trailing" secondItem="Xea-zh-hhh" secondAttribute="trailing" constant="168" id="aKh-I8-7hj"/>
-                            <constraint firstItem="T0F-NS-PIZ" firstAttribute="centerX" secondItem="zzc-ge-J68" secondAttribute="centerX" id="elB-NF-lRA"/>
                             <constraint firstItem="Xea-zh-hhh" firstAttribute="leading" secondItem="MNa-eH-45p" secondAttribute="leading" constant="168" id="obO-Xx-EJH"/>
                             <constraint firstItem="aJE-Sx-60W" firstAttribute="centerX" secondItem="zzc-ge-J68" secondAttribute="centerX" id="r9B-IZ-kiW"/>
                             <constraint firstItem="aJE-Sx-60W" firstAttribute="centerY" secondItem="zzc-ge-J68" secondAttribute="centerY" id="svI-rG-xRC"/>
-                            <constraint firstItem="T0F-NS-PIZ" firstAttribute="top" secondItem="hUa-8F-ZSa" secondAttribute="bottom" constant="16" id="uOY-mV-QWs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Blue" id="8Br-ar-XUd">
@@ -89,59 +65,10 @@
                             <color key="tintColor" systemColor="systemMintColor"/>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="dataLabel" destination="Xea-zh-hhh" id="bBe-Ya-Cwm"/>
-                        <outlet property="dataLabel1" destination="hUa-8F-ZSa" id="uEV-xs-CYG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vug-jR-bKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-98.461538461538453" y="318.48341232227489"/>
-        </scene>
-        <!--sceneB-->
-        <scene sceneID="pa5-dt-z1U">
-            <objects>
-                <viewController storyboardIdentifier="SecondViewController" title="sceneB" id="lNR-9d-pBe" customClass="SecondViewController" customModule="navigations" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xPV-1p-nL6">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXc-ng-KGs">
-                                <rect key="frame" x="30" y="405" width="330" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMk-wI-1DH">
-                                <rect key="frame" x="30" y="460" width="330" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="send new text back">
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="sendNewTextBack:" destination="lNR-9d-pBe" eventType="touchUpInside" id="TIP-xJ-k08"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="sic-O7-Ivo"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="sic-O7-Ivo" firstAttribute="trailing" secondItem="QXc-ng-KGs" secondAttribute="trailing" constant="30" id="7Nr-KS-FdH"/>
-                            <constraint firstItem="GMk-wI-1DH" firstAttribute="leading" secondItem="sic-O7-Ivo" secondAttribute="leading" constant="30" id="C35-wZ-HSV"/>
-                            <constraint firstItem="sic-O7-Ivo" firstAttribute="trailing" secondItem="GMk-wI-1DH" secondAttribute="trailing" constant="30" id="HQM-Zk-xk6"/>
-                            <constraint firstItem="GMk-wI-1DH" firstAttribute="top" secondItem="QXc-ng-KGs" secondAttribute="bottom" constant="21" id="TEj-uI-up6"/>
-                            <constraint firstItem="QXc-ng-KGs" firstAttribute="centerY" secondItem="xPV-1p-nL6" secondAttribute="centerY" id="XS6-P9-0Py"/>
-                            <constraint firstItem="QXc-ng-KGs" firstAttribute="centerX" secondItem="xPV-1p-nL6" secondAttribute="centerX" id="vEf-Zy-xdp"/>
-                            <constraint firstItem="QXc-ng-KGs" firstAttribute="leading" secondItem="sic-O7-Ivo" secondAttribute="leading" constant="30" id="xvg-HS-thP"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" id="hnU-Ne-gA3"/>
-                    <connections>
-                        <outlet property="dataTextField" destination="QXc-ng-KGs" id="nso-EH-H5n"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="S9g-08-diB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-72" y="999"/>
         </scene>
         <!--Gray-->
         <scene sceneID="Uyg-gJ-hUR">
